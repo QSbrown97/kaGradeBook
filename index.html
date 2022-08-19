@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="Kenzie" />
+    <meta name="author" content="Kenzie" />
+    <meta name="keywords" content="Kenzie" />
+
+    <!-- Title Page-->
+    <title>Kenzie JavaScript Page</title>
+
+    <!-- CSS-->
+    <link href="style.css" rel="stylesheet" media="all" />
+
+    <!-- JS Library -->
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Kenzie High School</h1>
+    <section id="gradebook"></section>
+    <section id="controls">
+      <h3>Controls</h3>
+      <div class="content">
+        <form id="addStudentForm">
+          <h4>Add a Student</h4>
+          <section>
+            <label for="studentFirstName">First Name:</label>
+            <input id="studentFirstName" type="text" required/>
+          </section>
+          <section>
+            <label for="studentLastName">Last Name:</label>
+            <input id="studentLastName" type="text" required/>
+          </section>
+          <button type="submit">Add Student</button>
+        </form>
+        <form id="addAssignmentForm">
+          <h4>Add an Assignment</h4>
+          <section>
+            <label for="assignmentName">Assignment Name:</label>
+            <input id="assignmentName" type="text" required/>
+          </section>
+          <section>
+            <label for="assignmentPoints">Points Possible:</label>
+            <input id="assignmentPoints" type="number" min=0 required/>
+          </section>
+          <button type="submit">Add Assignment</button>
+        </form>
+      </div>
+    </section>
+    <script src="code.js"></script>
+  </body>
+</html>

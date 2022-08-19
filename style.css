@@ -1,0 +1,84 @@
+/* Write your CSS Here. */
+
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background: lightblue;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 3em;
+  margin: 0;
+  padding: 0.5em;
+}
+
+#gradebook header {
+  display: flex;
+  justify-content:space-evenly;
+  line-height: 3em;
+}
+
+#gradebook header h4, #gradebook header h2 {
+  margin: 0;
+}
+
+.studentList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  line-height: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #dbdbdb;
+  position: relative;
+  padding-top: 2em;
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.studentListTitle {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.studentList>li {
+  text-align: left;
+  background: white;
+  padding: 1em;
+  margin: 1em;
+  min-width: 200px;
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.warning:after {
+  content: "\26A0";
+  color: red;
+  vertical-align: middle;
+  font-size: 20px;
+  margin: 2px;
+}
+
+#controls form {
+  background: lightblue;
+  padding: 1em;
+}
+
+#controls .content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#controls form section {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+#controls h4 {
+  margin-top: 0; 
+}
